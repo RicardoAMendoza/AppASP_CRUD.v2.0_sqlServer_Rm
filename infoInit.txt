@@ -1,0 +1,10 @@
+1. create repository in GitHub : AppASP_CRUD.v2.0_sqlServer_Rm
+Description - Implementing Basic CRUD Functionality : Introduction to the relation between a SQL Server database and the ASP.NET programming language.
+2. create file : prjASP_App_CRUD.v2.0_sqlServer_Rm
+3. open git Bash
+4. create README.md inside prjASP_App_CRUD.v2.0_sqlServer_Rm
+   git init
+5. git add README.md
+6. git commit -m "first commit"
+7. git remote add origin https://github.com/RicardoAMendoza/AppASP_CRUD.v2.0_sqlServer_Rm.git
+8. git push -u origin master
