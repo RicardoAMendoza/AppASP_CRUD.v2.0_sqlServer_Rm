@@ -62,6 +62,7 @@ namespace prjASP_App_CRUD.v2._0_sqlServer_Rm
                 Connexion.Close();
                 // 6. Execute gets the info client
                 gvClient.DataSource = table;
+
                 // 7. Excute joins the table with the control GridView
                 gvClient.DataBind();
             }
@@ -82,6 +83,7 @@ namespace prjASP_App_CRUD.v2._0_sqlServer_Rm
                 int idclient = Convert.ToInt32((sender as LinkButton).CommandArgument);
                 //  Gets idclient value
                 hfidclient.Value = idclient.ToString();
+
                 // 1. Execute open connection
                 OpenConnection();
                 // 2. Execute stored procedure
@@ -94,6 +96,7 @@ namespace prjASP_App_CRUD.v2._0_sqlServer_Rm
                 dataAdapter.Fill(table);
                 // 6. Execute close connection
                 Connexion.Close();
+
                 // select clietn by row
                 txtclientNumber.Text = table.Rows[0]["clientNumber"].ToString();
                 txtname.Text = table.Rows[0]["name"].ToString();
